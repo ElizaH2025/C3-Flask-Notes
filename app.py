@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Index route for web app
 @app.route("/")
 def index():
-    return "hi :)"
+    return render_template("index.html")
 
 # new route
 @app.route("/hello/")
@@ -16,4 +16,4 @@ def hello_there(name_data = None):
 
 # Allows you to click "Run" button
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5421)
