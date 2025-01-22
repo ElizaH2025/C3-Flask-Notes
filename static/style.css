@@ -1,12 +1,42 @@
 body {
-    background-image: url("file:///Users/eliza/Desktop/hi.png");
+    background-image: url("IMG_0234.JPG");
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    height: 30vh;
 }
 
 h1 {
     color:rgb(225, 197, 239);
     font-family: sans-serif;
+    animation: yay 5s ease-in;
 }
 
+@keyframes yay {
+    0% {
+        opacity: 25%;
+        transform: translateX(25px);
+    }
+
+    25% {
+        opacity: 50%;
+        transform: translateX(50px);
+    }
+
+    50% {
+        opacity: 75%;
+        transform: translateX(75px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(100px);
+    }
+
+
+}
+
+/* 
 #fun {
     background-color: blanchedalmond;
 }
@@ -14,3 +44,4 @@ h1 {
 .fun-text {
     font-size: 100px;
 }
+*/
