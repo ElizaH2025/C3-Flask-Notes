@@ -3,34 +3,34 @@ body {
     background-size: contain;
     background-position: center;
     margin: 0;
-    height: 30vh;
+    height: 40px;
 }
 
 h1 {
     color:rgb(225, 197, 239);
     font-family: sans-serif;
-    animation: yay 5s ease-in;
+    animation: yay 2s ease-in;
 }
 
 @keyframes yay {
     0% {
         opacity: 25%;
-        transform: translateX(25px);
+        transform: translateX(0px);
     }
 
     25% {
         opacity: 50%;
-        transform: translateX(50px);
+        transform: translateX(100px);
     }
 
     50% {
         opacity: 75%;
-        transform: translateX(75px);
+        transform: translateX(200px);
     }
 
     100% {
         opacity: 100%;
-        transform: translateX(100px);
+        transform: translateX(300px);
     }
 
 
@@ -45,3 +45,31 @@ h1 {
     font-size: 100px;
 }
 */
+
+.navbar {
+    background-color: lightslategray;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
