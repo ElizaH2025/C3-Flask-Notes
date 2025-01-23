@@ -11,7 +11,11 @@ def index():
 # New functions
 @app.route("/about/")
 def about():
-     return render_template("about.html")
+     mood_current = "good" # declare variable 
+     friends_list = ["Eliza", "Courtney", "Lucian", "Alex", "Abby", "Sohan", "Grace"]
+     defintions = { "platypus": "a blue-green creature that is very good at solving mysteries", "ladybug": "an apex predator with magical properties", 'giraffe': 'long neck animal with purple tongue' }
+     # pass variable into rendered template
+     return render_template("about.html", mood = mood_current, friends = friends_list, my_dict=defintions)
 
 @app.route("/contact/")
 def contact():
